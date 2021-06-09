@@ -42,8 +42,8 @@ function useAngularWatch<T extends ((rootScope: IRootScopeService) => any)[]>(
     useEffect(() => {
         // Creating a watch array, that will wrap watchFunctionsRef's functions with a dynamic call to
         // their last instance
-        const watchArray = watchFunctionsRef.current.map((_, index) => () =>
-            watchFunctionsRef.current[index]!(rootScope),
+        const watchArray = watchFunctionsRef.current.map(
+            (_, index) => () => watchFunctionsRef.current[index]!(rootScope),
         );
         const removeFunc = rootScope.$watchGroup(watchArray, (newValue: TupleReturnType<T>) => {
             // We need to clone this array because angular being angular, and uses the same array as newValue and just

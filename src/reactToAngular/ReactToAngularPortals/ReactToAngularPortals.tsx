@@ -20,10 +20,7 @@ const ReactToAngularPortals: React.FC = () => {
     return (
         <>
             {componentDefinitions.map((componentDefinition) => (
-                <AngularInjectorContext.Provider
-                    value={componentDefinition.$injector}
-                    key={componentDefinition.id}
-                >
+                <AngularInjectorContext.Provider value={componentDefinition.$injector} key={componentDefinition.id}>
                     {ReactDOM.createPortal(componentDefinition.component, componentDefinition.container)}
                 </AngularInjectorContext.Provider>
             ))}
