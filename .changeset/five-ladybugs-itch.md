@@ -1,5 +1,0 @@
----
-"angulareact": patch
----
-
-update dependencies

@@ -3,7 +3,7 @@
   "description": "A way to seamlessly integrate React and AngularJS",
   "author": "Tonkean",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "module": "dist-es2015/index.js",
