@@ -24,7 +24,7 @@ interface Props<T> {
  * This component is a wrapper around a given react component, which allows modifying the props that's being passed to
  * the given component by calling `updateProps` method on the component ref object.
  */
-const UpdatableComponent = <T, >(
+const UpdatableComponent = <T,>(
     { component: Component, props: initialProps, services = {} }: Props<T>,
     ref: React.Ref<UpdatableComponentRef<T>>,
 ) => {
