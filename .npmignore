@@ -1,0 +1,11 @@
+.changeset
+.github
+/node_modules
+/src
+.gitignore
+.prettierignore
+.prettierrc.json
+CHANGELOG.md
+README.md
+tsconfig.es2015.json
+tsconfig.json

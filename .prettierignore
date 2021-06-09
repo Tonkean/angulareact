@@ -1,0 +1,7 @@
+/node_modules
+/dist
+/dist-es2015
+.gitignore
+.npmignore
+package.json
+package-lock.json
