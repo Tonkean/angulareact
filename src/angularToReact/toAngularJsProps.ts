@@ -19,7 +19,10 @@ import decamelize from 'decamelize';
  * angularJs template as variables.
  */
 function toAngularJsProps(propsMetadata: AngularJsPropMetadata<string>[]): Record<string, string> {
-    const entries = propsMetadata.map((metadata) => [decamelize(metadata.propName, '-'), metadata.propValue]);
+    const entries = propsMetadata.map((metadata) => [
+        decamelize(metadata.propName, { separator: '-' }),
+        metadata.propValue,
+    ]);
 
     return Object.fromEntries(entries);
 }
