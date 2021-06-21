@@ -3,7 +3,6 @@
 [![npm](https://img.shields.io/npm/v/angulareact?style=flat-square)](https://www.npmjs.com/package/angulareact)
 [![license](https://img.shields.io/github/license/tonkean/angulareact?style=flat-square)](LICENSE)
 ![top language](https://img.shields.io/github/languages/top/tonkean/angulareact?style=flat-square)
-![dependencies](https://img.shields.io/david/tonkean/angulareact?style=flat-square)
 
 A way to seamlessly integrate React and AngularJS.
 
