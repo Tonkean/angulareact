@@ -18,7 +18,8 @@
         "outDir": "dist/",
         "rootDir": "src/",
         "target": "ES5",
-        "module": "CommonJS"
+        "module": "CommonJS",
+        "importHelpers": true
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules/**/*"]
