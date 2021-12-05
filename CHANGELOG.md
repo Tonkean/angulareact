@@ -1,5 +1,12 @@
 # angulareact
 
+## 1.0.3
+
+### Patch Changes
+
+-   88ac8ef: enable exactOptionalPropertyTypes typescript flag
+-   c87b7e3: Update dependencies
+
 ## 1.0.2
 
 ### Patch Changes
