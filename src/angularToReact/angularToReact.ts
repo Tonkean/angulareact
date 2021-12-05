@@ -6,16 +6,14 @@ import camelcase from 'camelcase';
 import getAngularJsPropsMetadata, { AngularJsPropMetadata } from './getAngularJsPropsMetadata';
 import getBindings from './getBindings';
 
-export type CallbackParameters<PROPS extends Record<string, unknown>> = Partial<
-    {
-        [K in keyof PROPS]: PROPS[K] extends ((...args: any[]) => any) | undefined ? string[] : never;
-    }
->;
+export type CallbackParameters<PROPS extends Record<string, unknown>> = Partial<{
+    [K in keyof PROPS]: PROPS[K] extends ((...args: any[]) => any) | undefined ? string[] : never;
+}>;
 
 /**
  * The scope of the angular component that's generated in angularToReact.
  */
-type AngularToReactScope<PROPS extends Record<string, unknown>> = IScope & { props?: PROPS };
+type AngularToReactScope<PROPS extends Record<string, unknown>> = IScope & { props?: PROPS | undefined };
 
 /**
  * Converts an AngularJS component or directive to a react component.

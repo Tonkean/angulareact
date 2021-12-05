@@ -17,7 +17,7 @@ interface Props<T> {
     /**
      * AngularJs services to pass as props to the given component.
      */
-    services?: Partial<AngularServices>;
+    services: Partial<AngularServices>;
 }
 
 /**
@@ -25,7 +25,7 @@ interface Props<T> {
  * the given component by calling `updateProps` method on the component ref object.
  */
 const UpdatableComponent = <T,>(
-    { component: Component, props: initialProps, services = {} }: Props<T>,
+    { component: Component, props: initialProps, services }: Props<T>,
     ref: React.Ref<UpdatableComponentRef<T>>,
 ) => {
     const [props, setProps] = useState(initialProps);
