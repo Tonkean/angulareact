@@ -150,9 +150,9 @@ function reactToAngular<PROPS = Record<any, any>, SERVICE_NAMES extends keyof An
                  * `serviceNames` list.
                  * @returns an object that maps the service name to it's instance.
                  */
-                private getServicesObject(
-                    servicesArray: AngularServices[SERVICE_NAMES][],
-                ): { [SERVICE_NAME in SERVICE_NAMES]: AngularServices[SERVICE_NAME] } {
+                private getServicesObject(servicesArray: AngularServices[SERVICE_NAMES][]): {
+                    [SERVICE_NAME in SERVICE_NAMES]: AngularServices[SERVICE_NAME];
+                } {
                     const servicesObjectEntries = serviceNames.map((serviceName, index) => [
                         serviceName,
                         servicesArray[index],

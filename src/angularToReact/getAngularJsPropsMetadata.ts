@@ -44,7 +44,7 @@ export interface AngularJsPropMetadata<Key> {
  */
 function getAngularJsPropsMetadata<T extends Record<string, string>>(
     bindings: T,
-    callbackParameters?: CallbackParameters<T>,
+    callbackParameters: CallbackParameters<T> | undefined,
 ): AngularJsPropMetadata<keyof T & string>[] {
     return Object.entries(bindings).map(([internalBindingName, bindingProperties]) => {
         const { bindingName, bindingType } = parseBindingProperties(internalBindingName, bindingProperties);
