@@ -1,6 +1,8 @@
 export { default as angularToReact } from './angularToReact/angularToReact';
 export { default as reactToAngular } from './reactToAngular/reactToAngular';
 export { default as ReactToAngularPortals } from './reactToAngular/ReactToAngularPortals/ReactToAngularPortals';
+export * from './reactToAngular/ReactToAngularPortals/reactToAngularPortalsManager';
+export { default as reactToAngularPortalsManager } from './reactToAngular/ReactToAngularPortals/reactToAngularPortalsManager';
 export { default as useAngularService } from './useAngularService/useAngularService';
 export { default as useAngularWatch } from './useAngularWatch/useAngularWatch';
 

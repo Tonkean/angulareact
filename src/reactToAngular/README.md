@@ -69,3 +69,5 @@ ReactDOM.render(
     document.querySelector('#react-root'),
 );
 ```
+
+Configurable options can be found on reactToAngularPortalsManager
