@@ -1,5 +1,11 @@
 # angulareact
 
+## 1.0.4
+
+### Patch Changes
+
+-   1f6ca5f: Added optional config "dontCreateNewDefinitionForExistingComponent"
+
 ## 1.0.3
 
 ### Patch Changes
